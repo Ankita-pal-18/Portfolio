@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ankita | Web Designer Portfolio</title>
+    <link rel="stylesheet" href="portfolio.css">
+   
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Ankita Pal</div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#portfolio">Works</a></li>
+            
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Hi, I'm <span>Ankita</span><br>Web Designer</h1>
+            <button class="contact-btn">Contact</button>
+        </div>
+        <div class="hero-image">
+            <img src="Ankita.jpg" alt="Ankita">
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Hello! I’m Ankita, a passionate web designer creating clean, modern, and user-friendly designs. I love turning complex problems into simple solutions.</p>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <div class="skills-container">
+            <div class="skill">
+                <p>HTML & CSS</p>
+                <div class="progress-bar">
+                    <div class="progress-bar-inner" style="width: 0%;"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <p>JavaScript</p>
+                <div class="progress-bar">
+                    <div class="progress-bar-inner" style="width: 0%;"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <p>UI/UX Design</p>
+                <div class="progress-bar">
+                    <div class="progress-bar-inner" style="width: 0%;"></div>
+                </div>
+            </div>
+        </div>
+    </section>    
+
+    <section id="portfolio">
+        <h2>My Works</h2>
+        <div id="main_works">
+            <div class="work">
+                <h3>Project 1</h3>
+                <a href="https://event-lyart-five.vercel.app/" target="_blank">Event Organiztion Website</a>
+            </div>
+            <div class="work">
+                <h3>Project 2</h3>
+                <a href="https://thesecondwife.netlify.app/" target="_blank">Restaurant Website</a>
+            </div>
+            <div class="work">
+                <h3>Project 3</h3>
+                <a href="https://calculator-red-iota.vercel.app/" target="_blank">Calculator</a>
+            </div>
+            <div class="work">
+                <h3>Project 4</h3>
+                <a href="https://to-do-app-by-ankita.vercel.app/" target="_blank">To-Do List</a>
+            </div>
+            <div class="work">
+                <h3>Project 5</h3>
+                <a href="https://eclectic-bubblegum-898c2b.netlify.app/" target="_blank">Weather App</a>
+            </div>
+        </div>
+    </section>
+<!--
+    <section id="testimonials">
+        <h2>What People Say</h2>
+        <div id="main_testimonals">
+            <div class="testimonial">
+                <p>"Ankita's design skills are amazing! She really listens to what you need and delivers beyond expectations."</p>
+                <cite>- Debargha</cite>
+            </div>
+            <div class="testimonial">
+                <p>"The best web designer I've ever worked with. Professional, creative, and always on time."</p>
+                <cite>- Sayan</cite>
+            </div>
+        </div>
+    </section>
+-->
+    <section id="experience">
+        <h2>My Experience</h2>
+        <div id="main_experience">
+            <div class="experience-item">
+                <h3>Pinnacle Labs</h3>
+                <p>2024 (July-Aug)</p>
+                <p>Designed and maintained responsive websites for clients from various industries.</p>
+            </div>
+            <div class="experience-item">
+                <h3>Codex-Intern</h3>
+                <p>2024 (Aug-Sep)</p>
+                <p>Worked on numerous freelance projects, including e-commerce sites and portfolios.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="download">
+        <h2>Download My CV</h2>
+        <div id="main_download">
+            <a href="Ankita Pal_CV.pdf" download class="download-btn">Download CV</a>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Contact Me</h2>
+        <div class="contact-wrapper">
+            <div class="contact-info">
+                <h3>Get in Touch</h3>
+                <p><strong>Email:</strong> ankitapal.1462@gmail.com</p>
+                <p><strong>Phone:</strong> +91 908965XXX</p>
+                <p><strong>Location:</strong> Burdwan, West Bengal, India</p>
+            </div>
+            <div class="contact-form">
+                <form id="contactForm" onsubmit="return validateForm()">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" required></textarea>
+                    </div>
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/ankita-pal-1b09a1277/?trk=public-profile-join-page" target="_blank">LinkedIn</a>
+            <a href="https://github.com/Ankita-pal-18" target="_blank">GitHub</a>
+        </div>
+        <p>&copy; 2024 Ankita. All rights reserved.</p>
+    </footer>
+
+    <script src="portfolio.js"></script>
+</body>
+</html>
